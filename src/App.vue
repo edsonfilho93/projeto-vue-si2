@@ -1,25 +1,24 @@
 <template>
-  <div class="container">
-    <h1> App Comentários (isso será um componente no futuro) </h1>
-    <hr>
-    <Comentarios />
+  <div>
+    <Header />
+    <Livro />
   </div>
 </template>
 
 <script>
 
-import Comentarios from './components/Comentarios.vue'
+import Header from './components/Header'
+import Livro from './components/Livros'
 
 export default {
   name: 'App',
   components: {
-    Comentarios
+    Header,
+    Livro
   }
 }
 </script>
 
-<style scoped>
-h1 {
-  text-align: center;
-}
-</style>
+<style></style>
+
+
