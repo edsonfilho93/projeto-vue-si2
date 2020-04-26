@@ -1,24 +1,11 @@
-# projeto-vue-si2
+# Projeto de cadastro de livros em Vue.js. 
 
-## Project setup
+## Setup do projeto
 ```
 yarn install
 ```
 
-### Compiles and hot-reloads for development
+### Executar o projeto
 ```
-yarn serve
+yarn run serve
 ```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
