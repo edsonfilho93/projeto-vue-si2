@@ -5,7 +5,7 @@
 yarn install
 ```
 
-### Executar o projeto
+## Executando o projeto
 ```
 yarn run serve
 ```
