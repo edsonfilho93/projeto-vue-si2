@@ -12,7 +12,7 @@
             <input
                 v-model="codEditora"
                 type="text"
-                placeholder="Editora"
+                placeholder="Código da Editora"
                 class="form-control"
             />
         </p>
@@ -33,7 +33,7 @@
 
 <script>
 export default {
-    name: "Formulario",
+    name: "FormularioLivro",
 
     data() {
         return {

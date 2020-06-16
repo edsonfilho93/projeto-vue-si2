@@ -4,7 +4,7 @@
         <hr />
         <!-- Formulário -->
         <div>
-            <Formulario v-on:emit-livro="addLivro"></Formulario>
+            <FormularioLivro v-on:emit-livro="addLivro"></FormularioLivro>
         </div>
         <!-- Listagem Livros -->
         <p v-if="livros.length <= 0">Não há livros cadastrados</p>
@@ -14,7 +14,7 @@
                 <span>
                     Titulo do Livro: <strong>{{ livro.titulo }}</strong>
                 </span>
-                <span> Editora: {{ livro.codEditora }} </span>
+                <span> Código da Editora: {{ livro.codEditora }} </span>
                 <span> Número de Páginas: {{ livro.qtdPaginas }} </span>
             </p>
 
@@ -34,13 +34,13 @@
 </template>
 
 <script>
-import Formulario from "./Formulario";
+import FormularioLivro from "@/components/FormularioLivro";
 import livroService from "@/services/livroService.js";
 
 export default {
     name: "Livros",
     components: {
-        Formulario
+        FormularioLivro
     },
     data() {
         return {
@@ -58,7 +58,7 @@ export default {
                     this.forceRender();
                 })
                 .catch((error) => {
-                    console.log("Ocorreu um erro: " + error.response);
+                   return alert("Ocorreu um erro: " + error.response);
                 });
 
             this.created();
